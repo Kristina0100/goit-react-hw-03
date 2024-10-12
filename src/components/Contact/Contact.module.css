@@ -1,13 +1,15 @@
 .contact {
-  max-width: 250px;
   display: flex;
+  width: 230px;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid black;
   border-radius: 4px;
   padding: 10px 8px;
 }
 
 .button {
-  margin-left: auto;
+  padding: 7px 9px;
 }
 
 .name {

@@ -1,6 +1,6 @@
 .contacts {
   display: flex;
-  flex-direction: column;
-  gap: 13px;
-  margin-top: 25px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0 0 0;
 }

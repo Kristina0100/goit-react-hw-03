@@ -2,14 +2,16 @@ import styles from "./ContactList.module.css"
 
 import Contact from "../Contact/Contact"
 
-const ContactList = ({contacts}) => {
+const ContactList = ({filteredUsers, onDeleteContact}) => {
     return (
         <ul className={styles.contacts}>
-            {contacts.map(contact => {
+            {filteredUsers.map(contact => {
                 return (<li key={contact.id}>
                     <Contact
                         name={contact.name}
-                        number={contact.number} />
+                        number={contact.number}
+                        id={contact.id}
+                        onDeleteContact={onDeleteContact} />
                 </li>)
             })}
       </ul>
